@@ -7,7 +7,7 @@ This project provides a Cython template that can be easily compiled into a stand
 - **Standalone .exe Generation**: Convert Cython code into a Windows executable (.exe) that doesn’t require an external Python interpreter.
 - **No Dependencies on Python Installation**: The `.exe` runs with compiled `.pyd` files, eliminating the need for a pre-installed Python environment.
 - **Fully Customizable Template**: Ready to modify and tweak according to your project’s specific requirements. Easily extendable for your use cases.
-- **Cross-Platform Compilation**: Designed primarily for Windows, but can be adapted for other platforms with minimal adjustments.
+- **Supported Platform**: This template is **only** tested for Windows!
 
 ## Getting Started
 
@@ -71,6 +71,19 @@ and after that you can run:
 .\make.bat test
 ```
 
+### Make.bat script
+The `make.bat` script is used for most tasks related to build procedures.
+```
+Usage:
+   rebuild-c:         Rebuilds the entire Visual Studio 2022 project to build the main.exe
+   build-c:           Builds the Visual Studio 2022 project to create the main.exe
+   build-pyx:         Builds the pyx files into a pyd
+      --clean:        Cleans the build directory of the pyx build
+   setup-test:        Sets up the Lib test directory
+   test:              Tests the pyx files in combination with the main.exe
+```
+
+
 ## Customization
 
 You can easily modify the template to suit your specific needs. Here are a few common customizations:
@@ -85,8 +98,4 @@ Contributions are welcome! If you'd like to improve this template or add new fea
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-Feel free tpip listpo customize this README further depending on the specifics of your project or the features you'd like to emphasize!
+This project is licensed under the GNU GPLv3 License - see the [LICENSE](LICENSE) file for details.
